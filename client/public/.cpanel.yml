@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pracharkarsolutions.com/
+    - /bin/cp * $DEPLOYPATH
