@@ -11,7 +11,7 @@ export default function UnderConstruction() {
       />
       <h1 className="text-3xl font-semibold text-gray-700">We’re working on something awesome!</h1>
       <p className="text-lg text-gray-500 mt-2">
-        Stay tuned, we’ll be live soon. 🚧
+        
       </p>
     </div>
   );
