@@ -28,8 +28,8 @@ export default function Navbar() {
   return (
     <nav className="w-full flex flex-col justify-center items-center pt-3 fixed z-100">
       <div className="w-full max-w-[1250px] flex justify-between items-center font-medium">
-        <h1 className="text-4xl text-blue-500 font-black font-[Quicksand]">PK</h1>
-        <ul className="flex gap-20 px-2 bg-white shadow-md rounded-md">
+        <h1 className="text-4xl max-lg:text-lg text-blue-500 font-black font-[Quicksand] text-center">Pracharkar <p className="max-lg:text-sm text-lg text-gray-500">Solutions</p></h1>
+        <ul className="flex gap-20 px-2 bg-white shadow-md rounded-md max-lg:hidden">
           {menuItems.map((menu, index) => (
             <li
               key={index}
@@ -49,7 +49,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <Link to={'/contact'} className="bg-red-500 text-white p-4 rounded-xl flex justify-center items-center gap-2 shadow-md ">
+        <Link to={'/contact'} className="bg-red-500 max-lg:text-sm text-white p-4 rounded-xl flex justify-center items-center gap-2 shadow-md ">
           <IoCallOutline />
           Contact Us
         </Link>
