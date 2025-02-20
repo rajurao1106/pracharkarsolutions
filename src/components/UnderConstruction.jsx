@@ -1,5 +1,5 @@
 import React from "react";
-import under_construction from "../assets/images/under-construction.png"
+import under_construction from "../assets/images/components/under-construction.png"
 
 export default function UnderConstruction() {
   return (

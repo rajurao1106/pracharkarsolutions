@@ -1,22 +1,36 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Homepage from './pages/Homepage/Homepage'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import About from './pages/About'
-import UnderConstruction from './components/UnderConstruction'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage/Homepage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import UnderConstruction from "./components/UnderConstruction";
+import ContactUs from "./pages/ContactUs";
+import Whatsapp from "./components/Whatsapp";
+import ScrollToTop from "./components/ScrollToTop";
+import UseScrollToTop from "./components/useScrollToTop.jsx"
+
+const isUnderConstruction = true; 
 
 export default function App() {
   return (
-    <div>
-      <Router>
-        {/* <Navbar/> */}
-        <Routes>
-          <Route path='/' element={<UnderConstruction/>}/>
-          {/* <Route path='/about' element={<About/>}/> */}
-        </Routes>
-        {/* <Footer/> */}
-      </Router>
-    </div>
-  )
+    <Router>
+      <Navbar />
+      <Whatsapp />
+      <ScrollToTop />
+      <UseScrollToTop/>
+      <Routes>
+        <Route
+          path="/"
+          element={isUnderConstruction ? <UnderConstruction /> : <Homepage />}
+        />
+        <Route
+          path="*"
+          element={isUnderConstruction ? <UnderConstruction /> : <Homepage />}
+        />
+      </Routes>
+
+      {!isUnderConstruction && <ContactUs />}
+      <Footer />
+    </Router>
+  );
 }
