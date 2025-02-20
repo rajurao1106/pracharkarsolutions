@@ -30,7 +30,7 @@ export default function App() {
       </Routes>
 
       {!isUnderConstruction && <ContactUs />}
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

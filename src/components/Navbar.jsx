@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex flex-col justify-center items-center pt-3 fixed z-100">
       <div className="w-full max-w-[1250px] flex justify-between items-center font-medium">
-        <h1 className="text-4xl text-blue-500 font-black font-[Quicksand]">PK.</h1>
+        <h1 className="text-4xl text-blue-500 font-black font-[Quicksand]">PK</h1>
         <ul className="flex gap-20 px-2 bg-white shadow-md rounded-md">
           {menuItems.map((menu, index) => (
             <li
