@@ -2,7 +2,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-24">
       <div className="max-w-[1120px] mx-auto px-6">
         {/* Top Contact Info Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">

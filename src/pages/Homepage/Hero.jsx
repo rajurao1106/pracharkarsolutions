@@ -19,17 +19,17 @@ export default function Hero() {
       
 
       {/* Hero Section */}
-      <div className="container max-w-[1200px] mx-auto px-6 pt-16 pb-24 relative">
+      <div className="container max-w-[1200px] mx-auto px-6 pt-10 max-lg:pt-0 pb-24 relative">
         <div className="flex gap-16 items-center max-lg:flex-col-reverse">
           {/* Left Content */}
           <div className="space-y-8 relative">
-            <h1 className="text-[3.5rem] font-bold  leading-[1.1] tracking-tight">
+            <h1 className="text-[3.5rem] max-lg:text-[2.5rem] max-lg:text-center font-bold  leading-[1.1] tracking-tight">
               We Are Solution <br />
               Oriented <span className="text-orange-500">Digital</span> <br />
               Agency{" "}
               
             </h1>
-            <p className="text-gray-500 text-lg ">
+            <p className="text-gray-500 text-lg  max-lg:text-center">
               Suspendisse id odio a felis porta semper eu id ligula. Cras
               vestibulum nisl eu vehicula finibus. Praesent sollicitudin, arcu
               eu facilisis.
@@ -69,7 +69,7 @@ export default function Hero() {
               <img
                 src={homepage_image}
                 alt="Professional woman"
-                className="rounded-full w-[65rem] h-[28rem] object-cover object-center"
+                className="rounded-full w-[65rem] max-lg:w-[40rem] h-[32rem] max-lg:h-[20rem]"
               />
 
               {/* Floating Icons Around Image */}
@@ -99,14 +99,13 @@ export default function Hero() {
             </div>
 
             {/* Background Circle */}
-            <div className="absolute top-0 right-0 w-[28rem] h-[28rem] bg-yellow-400 rounded-full -z-10 transform translate-x-10 -translate-y-10 opacity-90"></div>
-          </div>
+           </div>
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute bottom-20 right-20">
-          <LayoutDashboard className="w-10 h-10 text-orange-500 animate-bounce" />
-        </div>
+        {/* <div className="absolute bottom-20 right-20">
+          <LayoutDashboard className="w-10 h-10 text-red-500 animate-bounce" />
+        </div> */}
       </div>
 
       {/* Specialties Section */}

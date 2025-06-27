@@ -17,10 +17,13 @@ const Footer = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-2xl font-bold">Pracharkar Solutions</h2>
-          <p className="mt-4 text-lg opacity-80">
+          <p className="mt-4 text-lg opacity-80 mb-5">
             Elevating brands with innovative advertising strategies and creative
             excellence.
           </p>
+          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <p className="mt-2 text-md">📧 info@pracharkarsolutions.com</p>
+          <p className="mt-2 text-md">📞 +91-8982804998</p>
         </motion.div>
 
         {/* Quick Links */}
@@ -51,10 +54,12 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <h3 className="text-xl font-bold">Contact</h3>
-          <p className="mt-4 text-md">📍 Shankar Nagar, Raipur, Chhattisgarh</p>
-          <p className="mt-2 text-md">📧 info@pracharkarsolutions.com</p>
-          <p className="mt-2 text-md">📞 +91 8982804998</p>
+          <h3 className="text-xl font-bold">Office Address</h3>
+          <p className="mt-4 text-md">📍 Head Office : Shivanand Nagar sector-1, Khamtari, Raipur, Chhattisgarh</p>
+          <p className="mt-4 text-md">📍 53, First Floor, Gorakhnath Society, Gayatri Nagar, Zingabai Takli, Nagpur, Maharashtra 440030</p>
+          <p className="mt-4 text-md">📍 Magarpatta, Pune, Maharashtra</p>
+          
+         
         </motion.div>
 
         {/* Social Media */}

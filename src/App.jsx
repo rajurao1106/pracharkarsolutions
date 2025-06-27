@@ -9,7 +9,7 @@ import Whatsapp from "./components/Whatsapp";
 import ScrollToTop from "./components/ScrollToTop";
 import UseScrollToTop from "./components/useScrollToTop.jsx"
 
-const isUnderConstruction = true; 
+const isUnderConstruction = false; 
 
 export default function App() {
   return (
@@ -24,13 +24,11 @@ export default function App() {
           element={isUnderConstruction ? <UnderConstruction /> : <Homepage />}
         />
         <Route
-          path="*"
-          element={isUnderConstruction ? <UnderConstruction /> : <Homepage />}
+          path="/contact"
+          element={isUnderConstruction ? <UnderConstruction /> : <ContactUs />}
         />
       </Routes>
-
-      {!isUnderConstruction && <ContactUs />}
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

@@ -51,9 +51,18 @@ export default function AboutUs() {
   return (
     <div className="text-gray-900 flex flex-col justify-center items-center px-6 py-12">
       {/* Sticky Image & Content */}
-      <div className="sticky top-24 w-full max-w-5xl p-6 shadow-lg rounded-2xl transition-transform duration-200 bg-white flex flex-col items-center justify-center gap-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left font-[Quicksand]">Our Services</h1>
-        <div className="flex flex-col md:flex-row items-center gap-6 w-full">
+      <div className="sticky top-18  max-lg:top-12 w-full max-w-5xl p-6 max-lg:p-3 shadow-lg rounded-2xl transition-transform duration-200 bg-white flex flex-col items-center justify-center gap-0">
+        <p className="font-[Quicksand] font-bold text-lg text-red-500">
+          What We Offer
+        </p>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center md:text-left font-[Quicksand] mb-3">
+          Our Creative Services
+        </h1>
+        <p className="font-[Quicksand] font-bold text-lg w-[80%] max-lg:w-full max-lg:text-sm text-center text-gray-500">
+          Get the most of reduction in your team’s operating costs for the whole
+          product which creates amazing UI/UX experiences.
+        </p>
+        <div className="flex flex-col md:flex-row items-center gap-4 w-full">
           <AnimatePresence mode="wait">
             <motion.img
               key={sections[activeIndex].image}
@@ -70,7 +79,7 @@ export default function AboutUs() {
             <h2 className="text-3xl font-bold text-blue-700 font-[Quicksand]">
               {sections[activeIndex].title}
             </h2>
-            <p className="text-lg text-gray-800 mt-4 leading-relaxed">
+            <p className="text-lg max-lg:text-base text-gray-800 mt-4 leading-relaxed">
               {sections[activeIndex].content}
             </p>
           </div>
@@ -78,13 +87,15 @@ export default function AboutUs() {
       </div>
 
       {/* Scrolling Sections */}
-      <div className="flex flex-col items-center w-full mt-16">
+      <div className="flex flex-col items-center w-full mt-16 ">
         {sections.map((section, index) => (
           <div
             key={index}
             ref={(el) => (sectionRefs.current[index] = el)}
-            className="h-[50vh] flex items-center justify-center w-full"
-          />
+            className="h-[45vh] max-lg:h-[30vh] flex items-center justify-center w-full z-10 "
+          >
+            {/* {sections[activeIndex].title} */}
+          </div>
         ))}
       </div>
     </div>
